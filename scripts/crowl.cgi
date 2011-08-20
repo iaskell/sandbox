@@ -11,7 +11,7 @@ my $cgi = new CGI;
 $cgi->charset('utf-8');
 
 print $cgi->header;
-print $cgi->start_html(-title=>'‚µ‚¢‚¶‚¢‚ ‚¢', -lang=> 'ja-JP');
+print $cgi->start_html(-title=>'ã—ã„ã˜ã„ã‚ã„', -lang=> 'ja-JP');
 print "hello!";
 print $cgi->end_html;
 
