@@ -1,4 +1,4 @@
-#!/usr/bin/local/perl
+#!/usr/bin/perl
 use strict;
 use Web::Scraper;
 use URI;
