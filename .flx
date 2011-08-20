@@ -1,0 +1,4 @@
+[permission]
+public_html/scripts          777
+public_html/scripts/crowl.cgi     777
+
