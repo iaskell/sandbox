@@ -1,4 +1,14 @@
-[permission]
-public_html/scripts          777
-public_html/scripts/crowl.cgi     777
+[setup]
+date > public_html/setup.txt
 
+[deploy]
+date > public_html/deploy.txt
+pwd
+ls -lA public_html
+chmod 755 public_html/dispatch.fcgi
+ls -lA public_html
+ls -lA scripts
+
+[permittion]
+public_html/setup.txt	777
+public_html/deploy.txt	777
