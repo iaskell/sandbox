@@ -7,6 +7,14 @@ use utf8;
 use CGI;
 use CGI::Carp qw(fatalsToBrowser);
 
+my $cgi = new CGI;
+$cgi->charset('utf-8');
+
+print $cgi->header;
+print $cgi->start_html(-title=>'‚µ‚¢‚¶‚¢‚ ‚¢', -lang=> 'ja-JP');
+print "hello!";
+print $cgi->end_html;
+
 =pod comment
 my $uri = URI->new("http://www.mai-net.net/bbs/sst/sst.php?act=list");
 my $scraper = scraper {
@@ -15,5 +23,4 @@ my $scraper = scraper {
 my $result = $scraper->scrape($uri);
 =cut
 
-print "Content-type: text/html \n\n";
-print "hello";
+
