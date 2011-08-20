@@ -15,5 +15,5 @@ my $scraper = scraper {
 my $result = $scraper->scrape($uri);
 =cut
 
-print "content-type: text/html;\n";
+print "Content-type: text/html \n\n";
 print "hello";
